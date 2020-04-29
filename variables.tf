@@ -17,3 +17,8 @@ variable "aws_ec2_type" {
   description = "AWS instance type"
   default = "t2.micro"
 }
+
+variable "aws_ssh_keys" {
+  description = "AWS SSH keys"
+  default = "~/.ssh/aws_terraform.pub"
+}

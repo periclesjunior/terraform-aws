@@ -9,5 +9,5 @@ resource "aws_instance" "myfirst_ec2" {
 # define SSH keys
 resource "aws_key_pair" "mykey" {
   key_name = "mykey"
-  public_key= file("~/.ssh/aws_terraform.pub")
+  public_key= file(var.aws_ssh_keys)
 }
